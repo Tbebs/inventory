@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css')}}" type = "text/css">
+    <style>
+        .navbar-custom {
+            background-color: rgb(0, 75, 93);
+        }
+
+        .navbar-custom .nav-link {
+            color: whitesmoke;
+        }
+
+        .logo {
+            max-height: 100px;
+        }
+
+        .table thead th {
+            color: rgb(0, 75, 93);
+        }
+
+        .footer-custom {
+            background-color: rgb(0, 75, 93);
+            color: whitesmoke;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .nav-link {
+            padding: 10px 20px; /* Adjust padding to increase tab size */
+            white-space: normal !important; /* Allow text to wrap */
+        }
+    
+        .nav-item {
+            display: block; /* Display each item on a new line */
+        }
+
+        .container {
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: rgb(0, 75, 93);
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='111mit.png') }}" alt="Your Logo" class="logo">
+            </a>
+        </div>
+        <div class="child child2">
+        
+        </div>
+        <div class="child child3  container" style="color:rgb(0, 75, 93);">
+            <h3>List of Inventory</h3>
+
+        </div>
+        <div class="child child4 container" style="color:rgb(0, 75, 93);">
+            <ul class="nav nav-tabs nav-fill mb-3 flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('dashboard')}}" style="background-color:rgb(0, 75, 93); color:whitesmoke;">Department of IT</a>
+                    <button class="btn btn-custom" onclick="location.href='{{ url_for('singleemployee', id=1) }}'">Profile A</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('CSE_dashboard')}}" style="background-color:rgb(0, 75, 93); color:whitesmoke;">Department of CSE</a>
+                    <button class="btn btn-custom" onclick="location.href='{{ url_for('CSE_empprofile', id=3) }}'">Profile B</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('EEE_dashboard')}}" style="background-color:rgb(0, 75, 93); color:whitesmoke;">Department of EEE</a>
+                    <button class="btn btn-custom" onclick="location.href='{{ url_for('EEE_empprofile', id=8) }}'">Profile C</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('ECE_dashboard')}}" style="background-color:rgb(0, 75, 93); color:whitesmoke;">Department of ECE</a>
+                    <button class="btn btn-custom" onclick="location.href='{{ url_for('ECE_empprofile', id=9) }}'">Profile D</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('BIOCHEM_dashboard')}}" style="background-color:rgb(0, 75, 93); color:whitesmoke;">Department of BIOCHEM</a>
+                    <button class="btn btn-custom" onclick="location.href='{{ url_for('BIOCHEM_empprofile', id=7) }}'">Profile E</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('MATSCI_dashboard')}}" style="background-color:rgb(0, 75, 93); color:whitesmoke;">Department of MATSCI</a>
+                    <button class="btn btn-custom" onclick="location.href='{{ url_for('MATSCI_empprofile', id=6) }}'">Profile F</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('Dormitory_dashboard')}}" style="background-color:rgb(0, 75, 93); color:whitesmoke;">Department of DORMITORY</a>
+                    <button class="btn btn-custom" onclick="location.href='{{ url_for('DORM_empprofile', id=5) }}'">Profile G</button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('office_dashboard')}}" style="background-color:rgb(0, 75, 93); color:whitesmoke;">Department of OFFICE & LIBRARY</a>
+                    <button class="btn btn-custom" onclick="location.href='{{ url_for('OnL_empprofile', id=4) }}'">Profile H</button>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% macro show_links() %}
+
+<ul class="nav nav-tabs nav-fill" style="background-color:rgb(0, 75, 93);">
+  <li class="nav-item">
+    <a class="nav-link" style="color:whitesmoke;" href="{{ url_for('index') }}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="color:whitesmoke;" href="{{ url_for('login') }}">Login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="color:whitesmoke;" href="{{ url_for('register') }}">Register</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" style="color:whitesmoke;" href="{{ url_for('admin_dashboard') }}">Dashboard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="color:whitesmoke;" href="{{ url_for('logout') }}">Logout</a>
+  </li>
+</ul>
+
+{% endmacro %}

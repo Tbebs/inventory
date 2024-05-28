@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MIT Campus Inventory Management Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .container img {
+            width: 50%;
+            margin-right: 20px;
+        }
+        
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <div class="container">
+        <img src="{{ url_for('static', filename='mit.png') }}" alt="Your Logo" class="logo">
+        <div>
+            <p>Welcome to MIT Campus Inventory Management System (CIMS)!</p>
+            <p>At MCIMS, we're driven by a commitment to efficiency, transparency, and innovation. Our mission is to revolutionize the way campuses manage their inventory by providing efficient, user-friendly solutions that address the unique challenges faced by educational institutions.</p>
+            <p>With years of experience in both the education and technology sectors, our team understands the complexities of managing inventory on campuses. We recognize the importance of optimizing processes to save organizations time and money while ensuring transparency and accountability.</p>
+            <p>CIMS offers comprehensive features tailored to the demands of modern campuses. Our platform streamlines inventory tracking, provides advanced analytics and reporting, and empowers administrators, faculty, and staff to make informed decisions.</p>
+            <p>By implementing CIMS, educational institutions can significantly reduce the time and resources spent on inventory management tasks. Our solution eliminates manual processes, minimizes errors, and improves overall efficiency, leading to substantial cost savings and enhanced productivity.</p>
+            <p>We are committed to continuous improvement and innovation, constantly enhancing CIMS with the latest technological advancements and incorporating user feedback. At CIMS, we strive to be more than just a software provider – we're your partners in optimizing inventory management for a brighter future in education.</p>
+            <p>Thank you for choosing Campus Inventory Management System. Together, let's shape the future of inventory management on campuses nationwide.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Campus Inventory Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

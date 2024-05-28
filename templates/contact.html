@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - >MIT Campus Inventory Management Software</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    
+    header {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    
+    footer {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+</style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="container">
+        
+        <img src="{{ url_for('static', filename='mit.png') }}" alt="Your Logo" class="logo">
+        <p>We'd love to hear from you! Whether you have questions, feedback, or inquiries about Campus Inventory Management System (CIMS), our team is here to assist you. Feel free to reach out to us using any of the following methods:</p>
+        <ul>
+            <li>Email: tbebegebreg@gmail.com</li>
+            <li>Phone: 0-123-456-7890</li>
+            <li>Address: <br>Mekelle Institute Of Technology <br> 123 Main Street <br> City, State, Zip Code</li>
+        </ul>
+        <p>[Contact Form]</p>
+        <p>Thank you for your interest in MCIMS. We look forward to connecting with you and assisting you with your inventory management needs!</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 MIT Campus Inventory Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
